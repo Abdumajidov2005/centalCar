@@ -17,30 +17,27 @@ require('ulanish.php');
 </head>
 
 <body>
-    <h1>
-        admin sahifa
+    <h1 class="container">
+        sayt menusini yaratish
     </h1>
 
-    <a href="addmenu.php" class="btn btn-primary float-end">Yaratish</a>
+    <form action="save2db.php" method="POST" class="form container lh-lg">
+        <div>
+            <label for="title">title </label>
+            <input type="text" class="form-control" name="title" id="title">
+        </div>
+        <div>
+            <label for="slug">slug</label>
+            <input type="text" class="form-control" name="slug" id="slug">
+        </div>
+        <div>
+            <label for="izoh">izoh</label>
+            <input type="text" class="form-control" name="izoh" id="izoh">
+        </div>
 
-    <table class="table table-bordered">
-        <thead>
-            <th>T/r</th>
-            <th>title</th>
-            <th>Slug</th>
-            <th>Izoh</th>
-            <th>Amallar</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>slaom</td>
-                <td>slaom</td>
-                <td>slaom</td>
-                <td>slaom</td>
-            </tr>
-        </tbody>
-    </table>
+        <input type="submit" value="OK" class="btn btn-primary" />
+    </form>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
