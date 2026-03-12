@@ -10,8 +10,8 @@ if ((isset($_POST['title']))) {
 
     $result = $ulanish->query($sql);
     if ($result) {
-        echo "Jadvalga yozildi";
+        header("Location:index.php?msg=Yangi menyu yaratildi");
     } else {
-        echo "xatolik yuz  berdi";
+        header("Location:index.php?msg=Yangi menyu yaratishda xatolik");
     }
 }
