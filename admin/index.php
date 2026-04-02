@@ -1,8 +1,8 @@
 <?php
 require('ulanish.php');
+$counter = 1;
 $sql = "SELECT * FROM `menyu`";
 $result = $ulanish->query($sql);
-
 ?>
 
 
@@ -21,7 +21,9 @@ $result = $ulanish->query($sql);
         <h1>
             admin sahifa
         </h1>
-
+        <a href="../index.php">
+            Saytda ko'rish
+        </a>
         <hr>
 
         <h3>
@@ -53,7 +55,8 @@ $result = $ulanish->query($sql);
                 ?>
                         <tr>
                             <td>
-                                <?= $row['id'] ?>
+                                <?= $counter;
+                                $counter++; ?>
                             </td>
                             <td>
                                 <a href="editmenu.php?id=<?= $row['id'] ?>" style="text-decoration:none;color:orange">
